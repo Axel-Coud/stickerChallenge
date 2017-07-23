@@ -1,5 +1,20 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+a:hover {
+	text-decoration: none
+}
+
+.test {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
 #nav-overrides input {
-	width: 300px;
+	width: 120px;
+	background-color: #D3D3D3;
 }
 
 .navbar {
@@ -7,6 +22,7 @@
 	border: none;
 	padding: 5px 0;
 	margin-bottom: 0;
+	border-radius: 0px;
 }
 
 #nav-overrides a {
@@ -23,11 +39,22 @@
 }
 
 #nav-overrides .navbar-nav {
-	margin: 0 10% 0 5%;
+	margin: 0 0 0 2%;
 }
 
 #nav-overrides .sign {
 	padding-left: 10px;
+}
+
+@media (min-width:768px) {
+	.sign {
+		position: absolute;
+		right: 240px;
+	}
+
+	#signup {
+		right: 160px;	
+	}
 }
 
 #signup {
@@ -36,15 +63,15 @@
 	border-radius: 3px;
 }
 
-/*      main content      */
-
-#main {
+/*      main      */
+/*  	prez 	  */
+.prez-back {
 	background-image: url(images/icon-background.png);
 	background-size: 700px;
 }
 
 .prez {
-	padding: 10vh 0;
+	padding: 20vh 0 10vh 0;
 	background-color: rgb(20,181,62,0.9);
 }
 
@@ -77,4 +104,67 @@
 	background-color: #FF2B56;
 	color: #FFFFFF;
 	font-size: 20.5px; 
+}
+
+/*      CONTENT   	*/
+
+.content {
+	background-color: #FFFFFF;
+	padding: 10vh 0;
+}
+
+.content > .container {
+	max-width: 1125px;
+}
+
+.col-md-3 .card a {
+	font-size: 15px;
+	color: #545452
+}
+
+.card {
+	margin-bottom: 10px;
+	transition: box-shadow 0.4s;
+}
+
+.card:hover {
+	box-shadow: 1px 1px 5px;
+}
+
+.card a {
+	color: 
+}
+
+#card1 > a {
+	display: block;
+	width: 100%;
+	height: 150px;
+	background-image: url("images/card1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#card2 > a {
+	display: block;
+	width: 100%;
+	height: 150px;
+	background-image: url("images/card2.jpg");
+	background-size: cover;
+	background-position: center;	
+}
+
+.card-content {
+	border: 1px solid #C4C4C4;
+	border-bottom: 0px;
+	padding: 20px;
+}
+
+.card-footer {
+	padding: 10px;
+	border-radius: 0px 0px 4px 4px;
+	border: 1px solid #C4C4C4;
+}
+
+h2 {
+	margin: 0;
 }
