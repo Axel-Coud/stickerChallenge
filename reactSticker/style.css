@@ -51,7 +51,6 @@ a:hover {
 		position: absolute;
 		right: 240px;
 	}
-
 	#signup {
 		right: 160px;	
 	}
@@ -96,6 +95,12 @@ a:hover {
 	background-color: #FFFFFF;
 	color: #14ABFF;
 	font-size: 20.5px;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+#title-link1:hover {
+	background-color: #14ABFF; 
+	color: #FFFFFF;
 }
 
 #title-link2 {
@@ -103,7 +108,13 @@ a:hover {
 	border-radius: 6px;
 	background-color: #FF2B56;
 	color: #FFFFFF;
-	font-size: 20.5px; 
+	font-size: 20.5px;
+	transition: background-color 0.5s, color 0.5s; 
+}
+
+#title-link2:hover {
+	color: #FF2B56;
+	background-color: #FFFFFF;
 }
 
 /*      CONTENT   	*/
@@ -113,58 +124,229 @@ a:hover {
 	padding: 10vh 0;
 }
 
-.content > .container {
+.content > .container, .news > .container {
 	max-width: 1125px;
 }
 
-.col-md-3 .card a {
+.card a {
 	font-size: 15px;
 	color: #545452
 }
 
 .card {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	transition: box-shadow 0.4s;
+	border: 1px solid #C4C4C4;
+	border-radius: 5px;
 }
 
 .card:hover {
 	box-shadow: 1px 1px 5px;
 }
 
-.card a {
-	color: 
-}
-
-#card1 > a {
+.card-img {
 	display: block;
 	width: 100%;
-	height: 150px;
-	background-image: url("images/card1.jpg");
 	background-size: cover;
 	background-position: center;
 }
 
+#card1 > a {
+	
+	height: 180px;
+	background-image: url("images/card1.jpg");
+}
+
 #card2 > a {
-	display: block;
-	width: 100%;
-	height: 150px;
+	height: 180px;
 	background-image: url("images/card2.jpg");
-	background-size: cover;
-	background-position: center;	
+}
+
+#card3 > a {
+	height: 243px;
+	background-image: url("images/card3.jpg");
+}
+
+#card4 > a {
+	height: 243px;
+	background-image: url("images/card4.jpg");
+	background-position: bottom;
+}
+
+#card5 > a {
+	height: 180px;
+	background-image: url("images/card5.jpg")
+}
+
+#card6 > a {
+	height: 180px;
+	background-image: url("images/card6.jpg")
+}
+
+#card7 > a {
+	height: 180px;
+	background-image: url("images/card7.jpg")
 }
 
 .card-content {
-	border: 1px solid #C4C4C4;
+	/*border: 1px solid #C4C4C4;*/
 	border-bottom: 0px;
+	border-top: 0px;
 	padding: 20px;
 }
 
 .card-footer {
 	padding: 10px;
 	border-radius: 0px 0px 4px 4px;
-	border: 1px solid #C4C4C4;
+	border-top: 1px solid #C4C4C4;
 }
 
-h2 {
+.card h2 {
 	margin: 0;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.sponsor-tag {
+	background-color: #D5D5D5;
+	border-radius: 4px;
+	padding: 1px 10px 3px 10px;
+	margin: 0 auto;
+}
+
+/* 			NEWS 		*/
+
+.post h2 {
+	margin: 8px 0;
+	color: #545452;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.news small, small a {
+	padding-top: 10px;
+	color: #A2A2A2;
+	font-size: 12px;
+}
+
+.title-news {
+	color: #3F3F3F;
+}
+
+.post {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width:640px) {
+	.post {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+.post-img {
+	display: block;
+	width: 220px;
+	min-width: 220px;
+	background-size: cover;
+	background-position: center;
+}
+
+#post1 {
+	height: 115px;
+	background-image: url("images/post1.jpg");
+}
+
+#post2 {
+	height: 115px;
+	background-image: url("images/post2.jpg");
+}
+
+#post3 {
+	height: 115px;
+	background-image: url("images/post3.jpg");
+}
+
+#post4 {
+	height: 115px;
+	background-image: url("images/post4.jpg");
+}
+
+#post5 {
+	height: 115px;
+	background-image: url("images/post5.jpg");
+}
+
+#post6 {
+	height: 115px;
+	background-image: url("images/post6.jpg");
+}
+
+#post7 {
+	height: 115px;
+	background-image: url("images/post7.jpg");
+}
+
+#post8 {
+	height: 115px;
+	background-image: url("images/post8.jpg");
+}
+
+.more {
+	text-align: center;
+	display: block;
+	margin: auto;
+	width: 100%;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 30px 0 30px 0;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.posts .more {
+	border: 1px solid #296DDA;
+	background-color: #296DDA;
+	color: #FFFFFF;
+}
+
+.posts .more:hover {
+	background-color: #FFFFFF;
+	color: #296DDA;
+}
+
+.videos .more {
+	border: 1px solid #303030;
+	background-color: #303030;
+	color: #FFFFFF;
+}
+
+.videos .more:hover {
+	background-color: #FFFFFF;
+	color: #303030;
+}
+
+.video {
+	text-align: center;
+}
+
+#video1 {
+	height: 190.5px;
+	background-image: url("images/video1.jpg")
+}
+
+#video2 {
+	height: 190.5px;
+	background-image: url("images/video2.jpg")
+}
+
+#video3 {
+	height: 190.5px;
+	background-image: url("images/video3.jpg")
+}
+
+#video4 {
+	height: 190.5px;
+	background-image: url("images/video4.jpg")
 }
