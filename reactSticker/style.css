@@ -63,8 +63,13 @@ a:hover {
 }
 
 /*      main      */
+
+#main {
+	background-color: #F5F5F5;
+}
+
 /*  	prez 	  */
-.prez-back {
+.prez-back, #join {
 	background-image: url(images/icon-background.png);
 	background-size: 700px;
 }
@@ -120,11 +125,10 @@ a:hover {
 /*      CONTENT   	*/
 
 .content {
-	background-color: #FFFFFF;
 	padding: 10vh 0;
 }
 
-.content > .container, .news > .container {
+.content > .container, .news > .container, #join > .container {
 	max-width: 1125px;
 }
 
@@ -215,6 +219,10 @@ a:hover {
 }
 
 /* 			NEWS 		*/
+
+.news {
+	padding-bottom: 10vh;
+}
 
 .post h2 {
 	margin: 8px 0;
@@ -348,5 +356,49 @@ a:hover {
 
 #video4 {
 	height: 190.5px;
-	background-image: url("images/video4.jpg")
+	background-image: url("images/video4.jpg");
+}
+
+/*   	JOIN   	  */
+
+.join-back {
+	background-color: rgb(9,137,249,0.9);
+}
+
+#join h2 {
+	font-size: 67px;
+	text-align: center;
+	margin: 60px 0;
+	color: #FFFFFF;
+}
+
+.join-content {
+	position: relative;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #1862AB;
+	padding: 25px;
+	border-radius: 10px;
+	margin: 30px 0 100px 0;
+}
+
+#join h4 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#join p {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.join-icon {
+	position: absolute;
+	top: -35px;
+	left: 42%;
+	background-color: #1862AB;
+	border-radius: 50%;
+	padding: 20px;
+	font-size: 30px;
+	height: 70px;
 }
