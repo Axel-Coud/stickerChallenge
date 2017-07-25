@@ -5,45 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="bootstrap-overrides">
-  <div class="test">
-  <nav id="nav-overrides" class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <img class="navbar-brand" src="images/logo.png" alt="">
-        <a class="navbar-brand" href="#">Scotch</a>
-        <a class="navbar-brand sign" href="#">Login</a>
-        <a class="navbar-brand sign" id="signup" href="#">SignUp</a>
-      </div>
+  <div class="nav-fix">
+    <nav id="nav-overrides" class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="navbar-brand" src="images/logo.png" alt="">
+          <a class="navbar-brand" href="#">Scotch</a>
+          <a class="navbar-brand sign" href="#">Login</a>
+          <a class="navbar-brand sign" id="signup" href="#">SignUp</a>
+        </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li ><a href="#">Courses <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Tutorial</a></li>
-          <li><a href="#">Workshops</a></li>
-          <li><a href="#">Forums</a></li>
-        </ul>
-        <form class="navbar-form navbar-right">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search Scotch">
-          </div>
-        </form>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li ><a href="#">Courses <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Forums</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search Scotch">
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
   </div>
-
   <section id="main">
     <div class="prez-back">
       <div class="prez">
@@ -293,9 +293,179 @@
             </div>
           </div>
         </div>
+        <div class="row prices">
+          <div id="free" class="col-md-offset-2 col-md-4">
+            <div class="price">
+              <div class="price-title1">
+                <h3>Scotch Free</h3>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li>Like your favorite posts</li>
+                  <li>Bookmark content for reference</li>
+                  <li>Post in the forums</li>
+                </ul>
+              </div>
+              <div class="price-footer">
+                <a href="#">Free</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="price">
+              <div class="price-title2">
+                <h3>Scotch Premium</h3>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li>All of the free features</li>
+                  <li>Access to <strong>all premium content</strong></li>
+                  <li>Downloadable videos</li>
+                  <li>Access to <strong>live chat</strong></li>
+                  <li><strong>No ads</strong> across all of Scotch</li>
+                  <li>Track <strong>completed</strong> content</li>
+                </ul>
+              </div>
+              <div class="price-footer">
+                <a id="premium-price" href="#">$20</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box box1">
+            <a href="#"></a>
+            <h4>Scotch.io Stickers</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="box box2">
+            <a href="#"></a>
+            <h4>Join Us On Slack</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="box box3">
+            <a href="#"></a>
+            <h4>Easiest Local Dev Environment</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="box box4">
+            <a href="#"></a>
+            <h4>Practical Angular v4+ Book</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 social">
+          <div class="social-title">
+            <div class="logo">
+              <img src="images/logo.jpg" alt="logo">
+            </div>
+            <h4>Scotch</h4>
+          </div>
+          <p>Top self learning. Informative tutorials explaining the code <strong>and the choices behind it all</strong>.</p>
+          <ul class="social-links">
+            <a href="#"><li><i class="fa fa-twitter fa-3x"></i></li></a>
+            <a href="#"><li><i class="fa fa-facebook fa-3x"></i></li></a>
+            <a href="#"><li><i class="fa fa-github fa-3x"></i></li></a>
+          </ul>
+        </div>
+        <div class="col-md-6 footer-infos">
+          <ul>
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <li>
+                  <a href="#"><h4>Scotch</h4></a>
+                  <ul>
+                    <li>
+                      <a href="#">About</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#">Advertising</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <li>
+                  <a href="#"><h4>Community</h4></a>
+                  <ul>
+                    <li>
+                      <a href="#">Forums</a>
+                    </li>
+                    <li>
+                      <a href="#">Slack</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <li>
+                  <a href="#"><h4>Extras</h4></a>
+                  <ul>
+                    <li>
+                      <a href="#">Become a Writer</a>
+                    </li>
+                    <li>
+                      <a href="#">Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Scotch Box</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5><a href="#">BROUGHT TO YOU BY...</a></h5>
+            <div class="flex">
+              <div class="dev1">
+                <a href="#"></a>
+                <div>
+                  <span>Chris Sevilleja</span>
+                </div>
+              </div>
+              <div class="dev2">
+                <a href="#"></a>
+                <div>
+                  <span>Nick Cerminara</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="padding-top: 40px;">
+            <ul class="flex text-right">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Rules</a></li>
+              <li><a href="#">Affiliates</a></li>
+            </ul>
+            <p>2017 © Scotch.io, LLC. All Rights Super Duper Reserved.</p>
+            <p>Proudly hosted by Digital Ocean</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
